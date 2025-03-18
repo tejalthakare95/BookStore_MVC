@@ -13,6 +13,11 @@ namespace Bulky.DataAccess
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public  DbSet<Company> Companys { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<OrderHeader> OrderHeaders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,6 +27,33 @@ namespace Bulky.DataAccess
                 new Category { Id = 1, Name="Action", DisplayOrder=1 },
                 new Category { Id = 2, Name = "SciFi", DisplayOrder = 2 },
                 new Category { Id = 3, Name = "History", DisplayOrder = 3 }
+                );
+
+            modelBuilder.Entity<Company>().HasData(
+                new Company { 
+                    Id = 2, 
+                    Name = "Tech Solution", 
+                    StreetAddress = "123 Tech St", 
+                    City ="Tech City", 
+                    PostalCode =123, 
+                    State="IL", 
+                    PhoneNumber="123456789" },
+                new Company { 
+                    Id = 3, 
+                    Name = "Vivid Books", 
+                    StreetAddress = "999 vivd", 
+                    City = "Delhi", 
+                    PostalCode = 456, 
+                    State = "DL", 
+                    PhoneNumber = "654789123" },
+                new Company { 
+                    Id = 4, 
+                    Name = "Readers Club", 
+                    StreetAddress = "7895 SR no", 
+                    City = "Pune", 
+                    PostalCode = 789, 
+                    State = "MH", 
+                    PhoneNumber = "41236978" }
                 );
             modelBuilder.Entity<Product>().HasData(
                 new Product
