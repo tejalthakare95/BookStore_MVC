@@ -1,10 +1,10 @@
-using Bulky.DataAccess.Repository.IRepository;
-using Bulky.Models;
+using BookStoreWeb.DataAccess.Repository.IRepository;
+using BookStoreWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
 
-namespace BulkyWeb.Areas.Customer.Controllers
+namespace BookStoreWeb.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
@@ -26,6 +26,7 @@ namespace BulkyWeb.Areas.Customer.Controllers
 
         public IActionResult Details(int productId)
         {
+
             ShoppingCart cart = new()
             {
                 Product = _unitOfWork.Product.Get(u => u.Id == productId, includeProperties: "Category"),

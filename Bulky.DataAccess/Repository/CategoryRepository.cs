@@ -1,13 +1,13 @@
-﻿using Bulky.DataAccess;
-using Bulky.DataAccess.Repository.IRepository;
-using Bulky.Models;
+﻿using BookStoreWeb.DataAccess;
+using BookStoreWeb.DataAccess.Repository.IRepository;
+using BookStoreWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bulky.DataAccess.Repository
+namespace BookStoreWeb.DataAccess.Repository
 {
     public class CategoryRepository : Repository<Category>, ICategoryReposotory
     {

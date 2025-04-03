@@ -1,12 +1,12 @@
-﻿using Bulky.DataAccess.Repository.IRepository;
-using Bulky.Models;
-using Bulky.Models.ViewModels;
+﻿using BookStoreWeb.DataAccess.Repository.IRepository;
+using BookStoreWeb.Models;
+using BookStoreWeb.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace BulkyWeb.Areas.Customer.Controllers
+namespace BookStoreWeb.Areas.Customer.Controllers
 {
     [Area("Customer")]
     [Authorize]

@@ -1,9 +1,9 @@
-﻿using Bulky.Models;
+﻿using BookStoreWeb.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Bulky.DataAccess
+namespace BookStoreWeb.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {

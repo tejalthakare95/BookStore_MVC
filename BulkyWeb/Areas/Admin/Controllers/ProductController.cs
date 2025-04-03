@@ -1,14 +1,14 @@
-﻿using Bulky.DataAccess.Repository.IRepository;
-using Bulky.Models;
-using Bulky.Models.ViewModels;
-using Bulky.Utility;
+﻿using BookStoreWeb.DataAccess.Repository.IRepository;
+using BookStoreWeb.Models;
+using BookStoreWeb.Models.ViewModels;
+using BookStoreWeb.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using System.IO;
 
-namespace BulkyWeb.Areas.Admin.Controllers
+namespace BookStoreWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
     //[Authorize(Roles = SD.Role_Admin)]

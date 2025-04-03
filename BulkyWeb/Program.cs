@@ -1,7 +1,7 @@
-using Bulky.DataAccess;
-using Bulky.DataAccess.Repository;
-using Bulky.DataAccess.Repository.IRepository;
-using Bulky.Utility;
+using BookStoreWeb.DataAccess;
+using BookStoreWeb.DataAccess.Repository;
+using BookStoreWeb.DataAccess.Repository.IRepository;
+using BookStoreWeb.Utility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
